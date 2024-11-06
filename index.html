@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEB DZ</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    
+    
+    
+  </head>
+  <body>
+  
+  <header class="header">
+  
+  
+
+    <a href="#home" class="logo">
+      Tra My <span>Nguyen</span>
+    </a>
+    <i class="bx bx-menu" id="menu-icon"></i>
+
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#passport">Passport</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a href="#myteam">Team</a>
+      <a href="#more">More</a>
+      <a href="#task">Task</a>
+      <a href="https://t.me/totallyspiceeee">Me</a>
+    </nav>
+
+
+  </header>
+  
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1>Hi,it's <span>Tra My</span></h1>
+      <h3>
+        I'm a <span>student of HSE University</span>
+      </h3>
+      <p>I'm 20 and study at the Faculty of Economics and Statistics. Currently, I'm tearfully trying to write codes... </p>
+      
+      <div class="social-icons">
+        <a href="https://github.com/Dschubass">
+          <i class="bx bxl-github"></i>
+        </a>
+        <a href="https://t.me/totallyspiceeee">
+          <i class="bx bxl-telegram"></i>
+        </a>
+      </div>
+      <div class="btn-group">
+        <a href="#" class="btn">Hire</a>
+        <a href="contact" class="btn">Contact</a>
+      </div>
+      
+     </div>
+    </div>
+    
+    <div class="home-img">
+      <img src="image.JPG" alt="">
+    </div>
+  </section>
+
+<section class="about" id="about">
+
+    <div class="about-img">
+        <img src="image2.JPG" alt="" class="thumbnail">
+    </div>
+    <div class="about-content">
+      <h2>About <span>Me</span></h2>
+      <p>I like to do everything in the last minutes and take it 1 second before the deadline, but I consider myself quite punctual</p>
+      <a href="#" class="btn">Read More</a>
+      </div>
+  </section>
+
+
+
+  <section class="passport" id="passport">
+    <h1>And now you can meet me for the third time with the same information!</h1>
+    <div class="passport-container">
+      <img src="passort_shablon.png" alt="Паспорт РФ">
+
+      <img id="photo" src="photo_my.PNG" alt="" title="">
+
+      <div class="screenshot">
+        <img src="passport_lan.jpg" alt="" class="">
+     </div>
+
+      
+      <div class="text" id='issued'>ГУ МВД ПО Г. МОСКВЕ</div>
+      <div class="text" id='date'>19.08.2019</div>
+      <div class="text" id='dateofbirth'>29.10.2004</div>
+      <div class="text" id='surname'>Нгуен</div>
+      <div class="text" id='name'>Ча Ми</div>
+      <div class="text" id='gender'>Жен</div>
+      <div class="text" id='birthplace'>Москва</div>
+      
+      <div class="button-container">
+        <button id="change">Change</button>
+
+        <script>
+          document.getElementById('change').addEventListener('click', function() {
+              const issuedText = document.getElementById('issued');
+              const surnameText = document.getElementById('surname');
+              const nameText = document.getElementById('name');
+              const genderText = document.getElementById('gender');
+              const birthplaceText = document.getElementById('birthplace');
+      
+              if (issuedText.innerText === 'ГУ МВД ПО Г. МОСКВЕ') {
+                  issuedText.innerText = 'GU of the MIA of Russia in Moscow';
+                  surnameText.innerText = 'Nguyen';
+                  nameText.innerText = 'Tra My';
+                  genderText.innerText = 'Female';
+                  birthplaceText.innerText = 'Moscow';
+              } else {
+                  issuedText.innerText = 'ГУ МВД ПО Г. МОСКВЕ';
+                  surnameText.innerText = 'Нгуен';
+                  nameText.innerText = 'Ча Ми';
+                  genderText.innerText = 'Жен';
+                  birthplaceText.innerText = 'Москва';
+              }
+          });
+      </script>
+    </div>
+  </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2>What can I do for you?</h2>
+    <ol><li><span>In your student life:</span>
+      <ul>
+          <li>Make a bombastic presentation</li>
+          <li>Prepare a great speech for the diploma</li>
+          <li>Do any kind of homework</li>
+          <li>To pray for you to pass everything at the session</li>
+      </ul>
+  </li>
+  <li><span>In your personal life:</span>
+      <ul>
+          <li>Take a walk with you</li>
+          <li>To support you</li>
+          <li>To cheer you up</li>
+          <li>To play with you</li>
+      </ul>
+  </li>
+  <li><span>Other skills</span>
+      <ul>
+          <li>Plant a tree for you</li>
+          <li>Cook for you</li>
+          <li>create a gorgeous bouquet of flowers</li>
+      </ul>
+  </li></ol>
+        
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+    <section class="form-container">
+      <h3>THE FORM FOR RECORDING THE SERVICE</h3>
+      <form id="Form" action="https://www.bing.com/search?" method="POST">
+          <label for="username">Full Name</label>
+          <input type="text" id="username" name="username"><br><br>
+
+          <label for="service">Desired service</label>
+          <input type="text" id="service" name="service"><br><br>
+
+          <label for="year">Desired date of the visit</label>
+          <input type="number" id="year" name="year" min="1" max="31"><br><br>
+
+          <label for="free">Choose a service <br><br>
+          <input type="checkbox" id="free" name="Paid service">Paid service<br><br>
+          <input type="checkbox"  id="free" name="Free Consultation">Free Consultation<br><br>
+          </label>
+
+          <label for="service-select">Choose a service</label> 
+          <select id="service-select" name="service">
+              <option value="student">Students' life</option>
+              <option value="personal">Personal Life</option>
+              <option value="other">Other options</option>
+
+          </select><br><br>
+
+          <label for="visit">Have you visited us before?</label><br>
+          <input type="radio" id="visit_yes" name="visit" value="yes">
+          <label for="visit_yes">Yes</label><br>
+          <input type="radio" id="visit_no" name="visit" value="no">
+          <label for="visit_no">No</label><br><br>
+
+          <label for="suggest_date">Date of visit</label>
+          <input type="date" id="suggest_date" name="suggest_date"><br><br>
+
+          <label for="password">Password for editing the offer</label>
+          <input type="password" id="password" name="password">
+          
+
+          <input type="submit" value="Sign up">
+      </form>
+    </section>
+
+
+    <section class="myteam" id="myteam">
+      <h2>My <span>team</span></h2>
+      <table  background="background.jpg"> 
+        <tr>
+            <th>Team</th>
+            <th>Posistion</th>
+            <th>Work experience</th>
+            <th>Work schedule</th>
+            <th>Portfolio</th>
+            <th>Picture</th>
+        </tr>
+        <tr>
+            <td class="team">Milton Glaser</td>
+            <td class="position">Graphic Designer</td>
+            <td>25 years</td>
+            <td>Mon-Fri</td>
+            <td><a href="https://www.miltonglaser.com/" target="_blank">Works</a></td>
+            <td><a href="https://www.miltonglaser.com/" target="_blank">
+                <img src="glaser.jpg" alt="" title=""></a></td>
+        </tr>
+        <tr>
+          <td class="team">Elon Reeve Musk</td>
+          <td class="position">Engineer</td>
+          <td>18 years</td>
+          <td>Mon-Fri</td>
+          <td><a href="https://twitter.com/elonmusk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Works</a></td>
+          <td><a href="https://twitter.com/elonmusk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+              <img src="musk.jpg" alt="" title=""></a></td>
+      </tr>
+      <tr>
+        <td class="team">Mary Harris Smith</td>
+        <td class="position">Accountant</td>
+        <td>30 years</td>
+        <td>All week</td>
+        <td><a href="https://en.wikipedia.org/wiki/Mary_Harris_Smith" target="_blank">Works</a></td>
+        <td><a href="https://en.wikipedia.org/wiki/Mary_Harris_Smith" target="_blank">
+            <img src="mary.jpg" alt="" title=""></a></td>
+    </tr>
+
+    <tr>
+      <td class="team">Saul Bass</td>
+      <td class="position">Filmmaker/Designer</td>
+      <td>30 years</td>
+      <td>Mon-Wen</td>
+      <td><a href="https://en.wikipedia.org/wiki/Saul_Bass" target="_blank">Works</a></td>
+      <td><a href="https://en.wikipedia.org/wiki/Saul_Bass" target="_blank">
+          <img src="bass.jpg" alt="" title=""></a></td>
+  </tr>
+      </table>
+    </section>
+
+    <section class="more" id="more">
+      <div class="worker-card">
+        <a href="https://youtu.be/AdUjLVFUaK4?si=oTl3wsRND31jf5ZT" target="_blank">
+            <img src="glaser.jpg" alt="Milton Glaser">
+        </a>
+        <p class="worker-caption">Milton Glaser Interview</p>
+        <h3>Milton Glaser</h3>
+        <p>Born June 26, 1929 in New York City, Milton Glaser died on 
+          June 26, 2020, on his 91st birthday. The dial of his life closes its stopwatch 
+          with this ultimate roguish trick. In the meantime, he will have given the 70s and 80s 
+          a happy and colourful face and New York a reason to be loved. His work reflects the Bronx where he was 
+          born : vibrant and colourful.</p>
+    </div>
+    
+    <div class="worker-card">
+      <a href="https://youtu.be/AdUjLVFUaK4?si=oTl3wsRND31jf5ZT" target="_blank">
+          <img src="musk.jpg" alt="Elon Reeve Musk">
+      </a>
+      <p class="worker-caption">Elon Reeve Musk Interview</p>
+      <h3>Elon Reeve Musk</h3>
+      <p>Elon Musk — born Elon Reeve Musk on June 28th, 1971 — is a world-renowned businessman 
+        and investor who wears several different hats for several different companies. 
+        For instance: He’s founder and CEO of SpaceX, in addition to serving as their Chief Engineer. 
+        He’s also the CEO of Tesla, not to mention his role as Product Architect. 
+        Plus, hes the Founder of The Boring Company and the Co-Founder of Neuralink and OpenAI. </p>
+    </div>
+    
+    <div class="worker-card">
+      <a href="https://yandex.ru/video/preview/614900315889038824" target="_blank">
+          <img src="mary.jpg" alt="Mary Harris Smith">
+      </a>
+      <p class="worker-caption">Mary Harris Smith Interview</p>
+      <h3>Mary Harris Smith</h3>
+      <p>Mary Harris Smith (27 November 1844 – 13 October 1934) was an accountant and entrepreneur. 
+        She became the first woman to complete the Institute of Chartered Accountants in England and Wales qualification but 
+        was denied membership because she was a woman. 
+        When the Sex Disqualification (Removal) 
+        Act was passed in 1919, Harris Smith became the world's first female Chartered Accountant. </p>
+    </div>
+    
+    <div class="worker-card">
+      <a href="https://youtu.be/S7l0mIlzx_I?si=Xo4XmOqLlVi7K1dh" target="_blank">
+          <img src="bass.jpg" alt="Saul Bass">
+      </a>
+      <p class="worker-caption">Saul Bass Interview</p>
+      <h3>Saul Bass</h3>
+      <p>American graphic designer and filmmaker Saul Bass created many recognizable title sequences and film posters. 
+        Working with filmmakers like Alfred Hitchcock and Stanley Kubrick, his behind-the-scenes work remains legendary. </p>
+    </div>
+    </section>
+
+    <div class="task" id="task">
+      <h1>Проверка размещения круглой сцены</h1>
+    <label for="area">Площадь зала (S): </label>
+    <input type="number" id="area" required><br><br>
+
+    <label for="radius">Радиус сцены (R): </label>
+    <input type="number" id="radius" required><br><br>
+
+    <label for="passage">Минимальный проход (K): </label>
+    <input type="number" id="passage" required><br><br>
+
+    <button onclick="checkPlacement()">Проверить</button>
+    <p id="result"></p>
+
+    <script>
+      function checkPlacement() {
+          const S = parseFloat(document.getElementById("area").value);
+          const R = parseFloat(document.getElementById("radius").value);
+          const K = parseFloat(document.getElementById("passage").value);
+
+          // Вычисляем сторону квадрата
+          const side = Math.sqrt(S);
+
+          // Проверяем, можно ли разместить сцену
+          const requiredSpace = 2 * K + 2 * R;
+
+          const result = requiredSpace <= side;
+          document.getElementById("result").innerText = result ? 
+              "Сцену можно разместить!" : 
+              "Сцену разместить нельзя.";
+      }
+  </script>
+    </div>
+
+
+
+ </section>
+
+<footer class="footer">
+    <div class="social-icons">
+      <a href="#">
+        <i class="bx bxl-github"></i>
+      </a>
+      <a href="#">
+        <i class="bx bxl-telegram"></i>
+      </a>
+    </div>
+  
+    <ul class="list">
+      <li>
+        <a href="#">FAQ</a>
+      </li>
+  
+      <li>
+        <a href="#about">About Me</a>
+      </li>
+  
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+
+    <div class="small-img">
+      <a href="died.JPG" target="_blank">
+        <img src="died.JPG" alt="" class="">
+    </a>
+    </div>
+    
+    <p class="copyright">
+      @Tra My Nguyen | All Rights Reserved
+    </p>
+
+   
+
+
+  </footer>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
